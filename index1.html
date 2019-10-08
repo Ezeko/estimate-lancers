@@ -15,11 +15,21 @@
 
   <style>
     .container {
+      width: 75%;
+      margin: auto;
+      border: 2px solid #91919187;
+      padding: 0 2em;
+      font-family: "Ubuntu", sans-serif;
+    }
+    /* display for tablets and bigger screens*/
+    @media (min-width:720px){
+    .container {
       width: 50%;
       margin: auto;
       border: 2px solid #91919187;
       padding: 0 2em;
       font-family: "Ubuntu", sans-serif;
+    }
     }
     h3 {
       font-weight: bold;
@@ -82,6 +92,20 @@
       line-height: 0;
       margin-top: 5%;
     }
+    #glac>hr{
+      margin-right: 8%;
+    }
+    @media (min-width:720px){
+      input[name='estTime'], input[name='estPrice']{
+      width: 20%;
+    }
+    }
+    @media (min-width: 1000px){
+    input[name='estTime'], input[name='estPrice']{
+      width: 15%;
+    }
+    }
+
   </style>
 
   <body>
@@ -96,7 +120,7 @@
       Glacier Fintech <hr />
     </div>
     <hr />
-    <div>
+    <div id="bill">
       <h3>Billing</h3>
       <div>
         <p>How long (in hours) will it take you to complete this project?</p>
