@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Estimation-Lancer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    .container {
+      width: 50%;
+      margin: auto;
+      border: 2px solid #91919187;
+      padding: 0 2em;
+      font-family: "Ubuntu", sans-serif;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    p {
+      display: inline-block;
+      width: 44%;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      margin-right: 2em;
+    }
+    #est1,
+    #est3 {
+      width: 8em;
+    }
+    #est2 {
+      width: 22em;
+    }
+    #exp1 {
+      width: 8em;
+    }
+    #exp2 {
+      width: 4em;
+    }
+    input[type="text"] {
+      border: 1px solid #919191;
+      padding: 0.5em 0;
+    }
+    ::placeholder {
+      padding: 0.78em;
+      font-size: 18px;
+      line-height: 21px;
+      color: #919191;
+    }
+    hr {
+      margin-top: 1.5em;
+      border: 1px solid #91919187;
+    }
+  </style>
+
+  <body>
+    <!-- GitHub username: Tana00; Slack username: @Felicia11 -->
+
+    <div class="container">
+      <hr />
+      <h3>Expenses</h3>
+      <div>
+        <p>
+          How much would it cost you to power your devices or equipment for this
+          project?
+        </p>
+        <input type="text" name="est1" id="est1" placeholder="NGN 0.00" />
+      </div>
+
+      <div>
+        <p>Are you subcontracting to anyone?</p>
+        <input
+          type="text"
+          name="est2"
+          id="est2"
+          placeholder="E.g. Illustrator, Consulting..."
+        />
+      </div>
+
+      <div>
+        <p>How much would they be paid?</p>
+        <input type="text" name="est3" id="est3" placeholder="NGN 0.00" />
+      </div>
+         
+      <!-- Slack Display Name: Akosworldwide, GitHub Username: Akosworldwide -->
+      
+      <br>
+      <h3>Expertise</h3>
+
+      <div>
+        <p>How many similar projects have<br>you done before?</p>
+        <input type="text" name="exp1" id="exp1">
+      </div>
+
+        <br>
+        
+      <div>
+        <p>Out of 5 how would you rate your<br>experience level in executing this<br>project?<p>
+        <input type="text" name="exp2" id="exp2">  /5
+      </div>
+    </div>
+  </body>
+</html>
