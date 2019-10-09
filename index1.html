@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Estimation-Lancer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+
+  <style>
+    .container {
+      width: 85%;
+      margin: auto;
+      border: 2px solid #91919187;
+      padding: 0 2em;
+      font-family: "Ubuntu", sans-serif;
+    }
+    /* display for tablets and bigger screens*/
+    @media (min-width:720px){
+    .container {
+      width: 85%;
+      margin: auto;
+      border: 2px solid #91919187;
+      padding: 0 2em;
+      font-family: "Ubuntu", sans-serif;
+    }
+    }
+    /*Desktop and bigger screens*/
+    @media (min-width: 1000px){
+      .container{
+        width: 70%;
+      }
+    }
+    @media (min-width:1200px){
+      .container {
+      width: 50%;
+      margin: auto;
+      border: 2px solid #91919187;
+      padding: 0 2em;
+      font-family: "Ubuntu", sans-serif;
+    }
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    p {
+      display: inline-block;
+      width: 44%;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      margin-right: 2em;
+    }
+    #est1,
+    #est3 {
+      width: 8em;
+    }
+    #est2 {
+      width: 15em;
+    }
+    input[type="text"] {
+      border: 1px solid #919191;
+      padding: 0.5em 0;
+    }
+    ::placeholder {
+      padding: 0.78em;
+      font-size: 10px;
+      line-height: 18px;
+      color: #919191;
+    }
+    hr {
+      margin-top: 1.5em;
+      border: 1px solid #91919187;
+    }
+/* @Ezeko*/
+    .date>input{
+      border: none;
+      text-decoration: underline;
+      font-display: bold;
+      font-size: 10px;
+      width:40%;
+      margin: 1%;
+
+    }
+    .date>input::placeholder{
+      text-decoration-line: underline;
+      font-weight: bolder;
+    }
+    @media (max-width: 500px){
+      .date>i{
+        position: relative;
+        top: 2%;
+        margin-left:2%;
+      }
+      h5{
+        font-size: 8px;
+      }
+    }
+    #word{
+      line-height: 0;
+      position: relative;
+      left: 2%;
+    }
+    @media (min-width:720px){
+      #est2 {
+      width: 22em;
+    }
+      .date>input{
+      border: none;
+      text-decoration: underline;
+      font-display: bold;
+      font-size: 14px;
+      width:20%;
+      margin: 1%;
+
+    }
+      #word{
+      line-height: 0;
+      position: relative;
+      left: 3%;
+    }
+    ::placeholder {
+      padding: 0.78em;
+      font-size: 18px;
+      line-height: 21px;
+      color: #919191;
+    }
+    }
+    @media (min-width:1000px){
+      #word{
+      line-height: 0;
+      position: relative;
+      left: 12%;
+    }
+    }
+    @media (min-width: 1200px){
+    #word{
+      line-height: 0;
+      position: relative;
+      left: 23%;
+    }
+    }
+    #word>h5{
+      font-weight: lighter;
+    }
+    #glac{
+      position: relative;
+      top:10%;
+      left: 5%;
+      bottom: 0;
+      right:2%;
+      line-height: 0;
+      margin-top: 5%;
+    }
+    #glac>hr{
+      margin-right: 8%;
+    }
+    input[name='estTime'], input[name='estPrice']{
+      width: 35%;
+    }
+    @media (min-width:720px){
+      input[name='estTime'], input[name='estPrice']{
+      width: 20%;
+    }
+    }
+    @media (min-width: 1000px){
+    input[name='estTime'], input[name='estPrice']{
+      width: 15%;
+    }
+    }
+
+  </style>
+
+  <body>
+      <!--@Ezeko -->
+      <div id="word">
+          <h1>Evaluation</h1>
+          <h5>Please Input the required fields in the form below</h5><br>
+        </div>
+    <div class="container">
+    
+    <div id="glac">
+      Glacier Fintech <hr />
+    </div>
+    <hr />
+    <div id="bill">
+      <h3>Billing</h3>
+      <div>
+        <p>How long (in hours) will it take you to complete this project?</p>
+        <input type="text" name="estTime" placeholder="Hours" />
+      </div>
+      <div>
+          <p>How much (in hours) do you charge per hour?</p>
+          <input type="text" name="estPrice" placeholder="NGN 0.00" />
+        </div>
+        <div class="date">
+          <p>Project starts/ends</p>
+          <i class="fa fa-calendar"></i><input type="text" onfocus="(this.type='date')" name="estStartDate" placeholder=" Set start date" />
+          <i class="fa fa-calendar"></i><input type="text" onfocus="(this.type='date')" name="estEndDate" placeholder="Set end date" />
+        </div>
+    </div>
+
+      <!-- GitHub username: Tana00; Slack username: @Felicia11 -->
+      <hr />
+      <h3>Expenses</h3>
+      <div>
+        <p>
+          How much would it cost you to power your devices or equipment for this
+          project?
+        </p>
+        <input type="text" name="est1" id="est1" placeholder="NGN 0.00" />
+      </div>
+
+      <div>
+        <p>Are you subcontracting to anyone?</p>
+        <input
+          type="text"
+          name="est2"
+          id="est2"
+          placeholder="E.g. Illustrator, Consulting..."
+        />
+      </div>
+
+      <div>
+        <p>How much would they be paid?</p>
+        <input type="text" name="est3" id="est3" placeholder="NGN 0.00" />
+      </div>
+    </div>
+  </body>
+</html>
